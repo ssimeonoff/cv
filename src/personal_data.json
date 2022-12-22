@@ -1,0 +1,45 @@
+{
+  "jobs": [
+    {
+      "key": 1,
+      "title": "Frontend developer",
+      "company": "Joint Academy",
+      "date": "2020 - Present",
+      "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+    },
+    {
+      "key": 2,
+      "title": "Quality Assurance",
+      "company": "Joint Academy",
+      "date": "2017 - 2021",
+      "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+    },
+    {
+      "key": 3,
+      "title": "Quality Assurance",
+      "company": "Various companies",
+      "date": "2006 - 2017",
+      "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+    }
+  ],
+  "profile": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  "name": "Simeon Simeonov",
+  "profession": "Pancakes Destroyer",
+  "phone": "+46 793 379 890",
+  "email": "s.simeonoff@gmail.com",
+  "address": "Fregattgatan 18, Malmö",
+  "education": {
+    "title": "BSc in Physics",
+    "uni": "Sofia University",
+    "date": "2002 - 2007",
+    "extra": "A long paragraph of extra blah blah."
+  },
+  "expertise": {
+    "extra": "",
+    "list": ["React", " QA", "UX/UI", "test"]
+  },
+  "interests": {
+    "extra": "A long paragraph of extra blah blah, but a funny one!",
+    "list": ["interest 1", "interest 2", "test"]
+  }
+}
