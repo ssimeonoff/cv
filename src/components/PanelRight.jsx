@@ -96,6 +96,5 @@ const ColumnsWrapper = styled.div`
 `;
 
 const Column = styled.div`
-  width: 33%;
 `;
 
