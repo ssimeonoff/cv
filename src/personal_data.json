@@ -5,26 +5,26 @@
       "title": "Frontend developer",
       "company": "Joint Academy",
       "date": "2020 - Present",
-      "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+      "info": "Fully switched from QA to Frontend development and continue developing a React web application. Still liking and continue doing tech-support. We are 2 Frontend developers in the team and we usually work independently."
     },
     {
       "key": 2,
       "title": "Quality Assurance",
       "company": "Joint Academy",
-      "date": "2017 - 2021",
-      "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+      "date": "2017 - 2020",
+      "info": "QA of native and web applications. During the years the job characterics changed a lot from being the only QA and testing everything, then focusing and testing only the native applications and finally testing only the web application. During the downtime of QA workload picking small bugs from the backlog and learning the first steps in React on the fly. A parallel job dutiy is dealing with the complicated tech-support cases, requiring digging in the database."
     },
     {
       "key": 3,
       "title": "Quality Assurance",
       "company": "Various companies",
       "date": "2006 - 2017",
-      "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+      "info": "Working as a QA and testing various products, hardware and software, from casino slot machines and z-wave sensors to native and web applications, experiencing and learnings different ways and flows of the QA processes."
     }
   ],
-  "profile": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  "profile": "Quality oriented mind set-up: Test-To-Break attitude. Good analytical and communication skills and ability to work independently with minimal supervision and perform as part of a team. Ability to work under strict deadlines. Experienced with Agile methodologies. Passion to quickly learn and adjust to new environments and technologies.",
   "name": "Simeon Simeonov",
-  "profession": "Pancakes Destroyer",
+  "profession": "Frontend Developer",
   "phone": "+46 793 379 890",
   "email": "s.simeonoff@gmail.com",
   "address": "Fregattgatan 18, Malmö",
@@ -32,14 +32,18 @@
     "title": "BSc in Physics",
     "uni": "Sofia University",
     "date": "2002 - 2007",
-    "extra": "A long paragraph of extra blah blah."
+    "extra": "After graduating high-school with profiles Math and Physics, I decided that I don't want to be a software developer and chose the Faculty of Physics over the Faculty of Math and Informatics. That didn't turn up as planned..."
   },
   "expertise": {
     "extra": "",
-    "list": ["React", " QA", "UX/UI", "test"]
+    "list": ["React", " QA", "UX/UI", "puzzles", "pancakes"]
   },
   "interests": {
+    "extra": "I built my desktop pc and it is very pretty.",
+    "list": [  "Computer games", "Board games", "Tech stuff", "Science", "Gym"]
+  },
+  "languages": {
     "extra": "A long paragraph of extra blah blah, but a funny one!",
-    "list": ["interest 1", "interest 2", "test"]
+    "list": ["EN - fluent", "BG - fluent", "SE - intermediate"]
   }
 }

@@ -18,7 +18,7 @@ const Modal = ({ content }) => {
   }, [hovered]);
 
   return (
-    <>
+    <Container>
       <Wrapper
         onMouseEnter={() => {
           setHovered(true);
@@ -34,16 +34,22 @@ const Modal = ({ content }) => {
         <Arrow />
         {content}
       </Popup>
-    </>
+    </Container>
   );
 };
 
 export default Modal;
 
+const Container = styled.div`
+@media (max-width: 800px) {
+  display: none;
+}
+`;
+
 const Wrapper = styled.div`
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 17px;
 `;
 
 const Popup = styled.div`
@@ -51,13 +57,14 @@ const Popup = styled.div`
   opacity: ${(props) => (props.$show ? "1" : "0")};
   z-index: 99;
   right: 28px;
-  top: -9px;
+  top: 5px;
   background-image: url("https://t3.ftcdn.net/jpg/04/43/56/98/240_F_443569863_tf8s6rMNm5I8aaejx7m28KO7hxhhQH1q.jpg");
   filter: drop-shadow(0 0px 5px #432616);
   text-align: left;
   transition: 0.3s;
   border-radius: 4px;
-  padding: 15px 20px;
+  padding: 10px 15px;
+  font-size: 14px;
 `;
 
 const Arrow = styled.div`
