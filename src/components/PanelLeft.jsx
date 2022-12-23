@@ -24,7 +24,6 @@ const PanelLeft = () => {
 export default PanelLeft;
 
 const Wrapper = styled.div`
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   min-width: 205px;
   padding:20px;

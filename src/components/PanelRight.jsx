@@ -46,7 +46,6 @@ const Container= styled.div`
 const Wrapper = styled.div`
   background: #fff6;
   padding: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 4px;
 `;
 const TopSection= styled.div`
@@ -64,7 +63,7 @@ const NameLabel = styled.div`
 `;
 const ProfessionLabel = styled.div``;
 const ProfileWrapper = styled.div`
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: left;
   text-align: justify;
 `;
