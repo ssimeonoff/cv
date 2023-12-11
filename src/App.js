@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import PanelLeft from "./components/PanelLeft";
 import PanelRight from "./components/PanelRight";

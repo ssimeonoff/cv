@@ -1,30 +1,30 @@
 import styled from "styled-components";
-import phone from "./resources/phone-call.png";
-import email from "./resources/email.png";
-import location from "./resources/location-pin.png";
-import linkedin from "./resources/linkedin.png";
-import github from "./resources/github.png";
+import avatar from "./resources/avatar.jpg";
 import personal_data from "../personal_data";
+
 
 const ContactSection = () => {
 
   return (
     <ContainerInfo>
+      <AvatarContainer>
+        <Avatar src={avatar} alt="avatar" />
+      </AvatarContainer>
       <Label>Contact</Label>
       <ContactWrapper>
-        <Icon src={phone} alt="phone"></Icon>
+        <IconContainer><i class="fa-solid fa-phone"></i></IconContainer>
         <div>{personal_data.phone}</div>
       </ContactWrapper>
       <ContactWrapper>
-        <Icon src={email} alt="phone"></Icon>
+      <IconContainer><i class="fa-solid fa-envelope"></i></IconContainer>
         <div>{personal_data.email}</div>
       </ContactWrapper>
       <ContactWrapper>
-        <Icon src={location} alt="phone"></Icon>
+      <IconContainer><i class="fa-solid fa-location-dot"></i></IconContainer>
         {personal_data.address}
       </ContactWrapper>
       <ContactWrapper>
-        <Icon src={linkedin} alt="phone"></Icon>
+      <IconContainer><i class="fa-brands fa-linkedin"></i></IconContainer>
         <Link
           href="https://www.linkedin.com/in/simeon-simeonov-79553544/"
           target="_blank"
@@ -34,7 +34,7 @@ const ContactSection = () => {
         </Link>
       </ContactWrapper>
       <ContactWrapper>
-        <Icon src={github} alt="phone"></Icon>
+      <IconContainer><i class="fa-brands fa-github"></i></IconContainer>
         <Link
           href="https://github.com/ssimeonoff"
           target="_blank"
@@ -49,8 +49,6 @@ const ContactSection = () => {
 export default ContactSection;
 
 const ContainerInfo = styled.div`
-  padding-top: 15px;
-  line-height: 15px;
 `;
 
 const ContactWrapper = styled.div`
@@ -78,10 +76,27 @@ const Link = styled.a`
   }
 `;
 
-const Icon = styled.img`
+const IconContainer = styled.div`
   width: 18px;
-  height: 18px;
+  font-size: 18px;
   margin-right: 10px;
+  color: #432616ee;
+  text-align: center;
+`;
+
+const AvatarContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 30px 0;
+  @media (max-width: 800px) {
+    display: none;
+  }
+`
+const Avatar = styled.img`
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   opacity: 0.9;
+  border: 1px solid #ccc8;
 `;
 

@@ -9,14 +9,14 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
+  width: 900px;
   padding: 40px;
-  color: #432616ee;
+  color: #432616;
   font-weight: 500;
 }
 @media (max-width: 800px) {
   .App {
-    width: 500px;
+    width: 550px;
   }
 }
 

@@ -2,18 +2,16 @@ import styled from "styled-components";
 import personal_data from "../personal_data";
 import SectionJob from "./SectionJob";
 import ContactSection from "./ContactSection";
-import PersonalSection from "./PersonalSection";
+import ExpertiseSection from "./ExpertiseSection";
 import EducationSection from "./EducationSection";
-import avatar from "./resources/avatar.jpg";
+import LanguageSection from "./LanguageSection";
+import InterestSection from "./InterestSection";
 
 const PanelRight = () => {
   return (
     <Container>
       <Wrapper>
         <TopSection>
-          <AvatarContainer>
-            <Avatar src={avatar} alt="avatar" />
-          </AvatarContainer>
         </TopSection>
         <NameWrapper>
           <NameLabel>{personal_data.name}</NameLabel>
@@ -23,16 +21,23 @@ const PanelRight = () => {
           <Label>Profile</Label>
           {personal_data.profile}
         </ProfileWrapper>
+      </Wrapper>
+      <WrapperExpanded>
         <Label>Expenrience</Label>
         {personal_data.jobs.map((job) => (
           <SectionJob job={job} key={job.key} />
         ))}
-  
-      </Wrapper>
+      </WrapperExpanded>
       <ColumnsWrapper>
-        <Column><EducationSection /></Column>
-        <Column><PersonalSection /></Column>
-        <Column><ContactSection /></Column>
+        <Column>
+          <ExpertiseSection /> 
+          <LanguageSection />
+          <InterestSection />
+        </Column>
+        <Column>
+          <ContactSection />
+          <EducationSection /> 
+        </Column>
       </ColumnsWrapper>
     </Container>
   );
@@ -40,30 +45,39 @@ const PanelRight = () => {
 export default PanelRight;
 
 const Container= styled.div`
-  display:block;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Wrapper = styled.div`
-  background: #fff6;
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 0 15px 0;
+  border: 1px solid #ccc8;
 `;
+
+const WrapperExpanded = styled(Wrapper)`
+  flex: 1;
+`;
+
 const TopSection= styled.div`
   @media (min-width: 800px) {
     display: none;
   }
 `;
 const NameWrapper = styled.div`
-  margin-bottom: 20px;
+  margin: 20px;
+  letter-spacing: 0.5px;
 `;
 const NameLabel = styled.div`
   font-size: 26px;
   text-transform: uppercase;
   font-weight: 400;
+  margin-bottom: 5px;
 `;
 const ProfessionLabel = styled.div``;
 const ProfileWrapper = styled.div`
-  margin-bottom: 20px;
   text-align: left;
   text-align: justify;
 `;
@@ -72,17 +86,7 @@ const Label = styled.div`
   text-transform: uppercase;
   text-align: left;
   color: #43261688;
-`;
-
-const AvatarContainer = styled.div`
-  width: 150px;
-  height: 150px;
-  margin: 10px auto 10px auto;
-  opacity: 0.8;
-`;
-
-const Avatar = styled.img`
-  border-radius: 50%;
+  letter-spacing: 0.5px;
 `;
 
 const ColumnsWrapper = styled.div`

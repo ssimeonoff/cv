@@ -1,39 +1,33 @@
 import styled from "styled-components";
-import { useState, useEffect } from "react";
-import info from "./resources/info.png";
+import { useState, useRef, useEffect } from "react";
 
 const Modal = ({ content }) => {
   const [showContent, setShowContent] = useState(false);
-  const [hovered, setHovered] = useState(false);
-
-  const onTimeout = () => {
-    setShowContent(true);
-  };
 
   useEffect(() => {
-    const timer = hovered && setTimeout(onTimeout, 300);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [hovered]);
+    document.addEventListener("click", handeClick, true )
+  }, []); 
+
+  const ref = useRef(null);
+
+  const handeClick = (e) => {
+    if (ref.current.contains(e.target)) {
+      setShowContent(prevState => !prevState);
+    } else {
+      setShowContent(false);
+    }
+  }
 
   return (
-    <Container>
+    <Container ref= {ref}>
       <Wrapper
-        onMouseEnter={() => {
-          setHovered(true);
-        }}
-        onMouseLeave={() => {
-          setHovered(false);
-          setShowContent(false);
-        }}
       >
-        <Icon src={info} alt="phone"></Icon>
-      </Wrapper>
-      <Popup $show={showContent}>
+        <i class="fa-solid fa-circle-info"></i>
+        <Popup $show={showContent}>
         <Arrow />
         {content}
       </Popup>
+      </Wrapper>
     </Container>
   );
 };
@@ -49,36 +43,33 @@ const Container = styled.div`
 const Wrapper = styled.div`
   position: absolute;
   right: 0;
-  top: 17px;
+  font-size: 18px;
+  color: #432616ee;
+  cursor: pointer;
 `;
 
 const Popup = styled.div`
   position: absolute;
-  opacity: ${(props) => (props.$show ? "1" : "0")};
+  transform: ${(props) => (props.$show ? "scale(1)" : "scale(0)")};
   z-index: 99;
-  right: 28px;
-  top: 5px;
-  background-image: url("https://t3.ftcdn.net/jpg/04/43/56/98/240_F_443569863_tf8s6rMNm5I8aaejx7m28KO7hxhhQH1q.jpg");
-  filter: drop-shadow(0 0px 5px #432616);
+  left: -16px;
+  top: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0px #432616;
   text-align: left;
-  transition: 0.3s;
   border-radius: 4px;
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: 15px 20px;
+  font-size: 15px;
+  line-height: 1.4em;
+  min-width: 300px;
 `;
 
 const Arrow = styled.div`
   position: absolute;
-  background-image: url("https://t3.ftcdn.net/jpg/04/43/56/98/240_F_443569863_tf8s6rMNm5I8aaejx7m28KO7hxhhQH1q.jpg");
+  background-color: #fff;
   width: 10px;
   height: 10px;
-  right: -5px;
-  top: -5;
+  left: 20px;
+  top: -5px;
   transform: rotate(45deg);
-`;
-
-const Icon = styled.img`
-  width: 18px;
-  height: 18px;
-  opacity: 0.9;
 `;

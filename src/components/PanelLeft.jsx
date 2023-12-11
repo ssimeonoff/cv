@@ -1,45 +1,47 @@
 import styled from "styled-components";
 import ContactSection from "./ContactSection";
 import EducationSection from "./EducationSection";
-import PersonalSection from "./PersonalSection";
-import avatar from "./resources/avatar.jpg";
+import ExpertiseSection from "./ExpertiseSection";
+import LanguageSection from "./LanguageSection";
+import InterestSection from "./InterestSection";
 
 const PanelLeft = () => {
   return (
-    <Wrapper>
-      <AvatarContainer>
-        <Avatar src={avatar} alt="avatar" />
-      </AvatarContainer>
-
-      <ContactSection />
-
-      <EducationSection />
-
-      <PersonalSection />
-
-    </Wrapper>
+    <Container>
+      <Wrapper>
+        <ContactSection />
+      </Wrapper>
+      <Wrapper>
+        <EducationSection />
+      </Wrapper>
+      <Wrapper>
+        <ExpertiseSection />
+      </Wrapper>
+      <Wrapper>
+        <LanguageSection />
+      </Wrapper>
+      <Wrapper> 
+        <InterestSection />
+      </Wrapper>
+    </Container>
   );
 };
 
 export default PanelLeft;
 
-const Wrapper = styled.div`
+const Container = styled.div`
   text-align: left;
-  min-width: 205px;
-  padding:20px;
   @media (max-width: 800px) {
     display: none;
   }
 `;
 
-const AvatarContainer = styled.div`
-  width: 150px;
-  height: 150px;
-  margin: 0px auto;
-  opacity: 0.8;
+const Wrapper = styled.div`
+  margin: 0px 15px 15px 0;
+  background-color: #fff5;
+  padding: 20px 20px 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc8;
 `;
 
-const Avatar = styled.img`
-  border-radius: 50%;
-`;
 
