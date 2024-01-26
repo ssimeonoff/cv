@@ -45,7 +45,8 @@ const DateContainer = styled.div`
 `;
 
 const DateLabel = styled.div`
-  width: 110px;
+  width: 140px;
+  font-size: 14px;
   text-align: center;
   padding: 5px;
   border-bottom: 1px solid #43261644;

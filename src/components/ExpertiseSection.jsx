@@ -17,9 +17,13 @@ export default EducationSection;
 
 export const Container = styled.div`
   position: relative;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #fff6;
   @media (max-width: 800px) {
-    text-align: left;
-    margin-bottom: 15px;
+    background-color: transparent;
   }
 `;
 

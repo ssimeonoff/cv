@@ -11,8 +11,6 @@ const PanelRight = () => {
   return (
     <Container>
       <Wrapper>
-        <TopSection>
-        </TopSection>
         <NameWrapper>
           <NameLabel>{personal_data.name}</NameLabel>
           <ProfessionLabel>{personal_data.profession}</ProfessionLabel>
@@ -53,19 +51,13 @@ const Wrapper = styled.div`
   padding: 20px;
   border-radius: 5px;
   background-color: #fff;
-  margin: 0 0 15px 0;
-  border: 1px solid #ccc8;
+  margin-bottom: 15px;
 `;
 
 const WrapperExpanded = styled(Wrapper)`
   flex: 1;
 `;
 
-const TopSection= styled.div`
-  @media (min-width: 800px) {
-    display: none;
-  }
-`;
 const NameWrapper = styled.div`
   margin: 20px;
   letter-spacing: 0.5px;

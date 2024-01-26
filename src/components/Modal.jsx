@@ -42,7 +42,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   position: absolute;
-  right: 0;
+  right: 15px;
   font-size: 18px;
   color: #432616ee;
   cursor: pointer;

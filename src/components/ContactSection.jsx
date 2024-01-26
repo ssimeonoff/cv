@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import avatar from "./resources/avatar.jpg";
 import personal_data from "../personal_data";
+import { Container } from "./ExpertiseSection";
 
 
 const ContactSection = () => {
 
   return (
-    <ContainerInfo>
+    <Container>
       <AvatarContainer>
         <Avatar src={avatar} alt="avatar" />
       </AvatarContainer>
@@ -43,13 +44,10 @@ const ContactSection = () => {
           GitHub
         </Link>
       </ContactWrapper>
-    </ContainerInfo>
+    </Container>
   );
 };
 export default ContactSection;
-
-const ContainerInfo = styled.div`
-`;
 
 const ContactWrapper = styled.div`
   display: flex;
