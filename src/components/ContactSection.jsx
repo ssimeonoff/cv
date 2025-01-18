@@ -3,9 +3,7 @@ import avatar from "./resources/avatar.jpg";
 import personal_data from "../personal_data";
 import { Container } from "./ExpertiseSection";
 
-
 const ContactSection = () => {
-
   return (
     <Container>
       <AvatarContainer>
@@ -13,19 +11,27 @@ const ContactSection = () => {
       </AvatarContainer>
       <Label>Contact</Label>
       <ContactWrapper>
-        <IconContainer><i class="fa-solid fa-phone"></i></IconContainer>
+        <IconContainer>
+          <i class="fa-solid fa-phone"></i>
+        </IconContainer>
         <div>{personal_data.phone}</div>
       </ContactWrapper>
       <ContactWrapper>
-      <IconContainer><i class="fa-solid fa-envelope"></i></IconContainer>
+        <IconContainer>
+          <i class="fa-solid fa-envelope"></i>
+        </IconContainer>
         <div>{personal_data.email}</div>
       </ContactWrapper>
       <ContactWrapper>
-      <IconContainer><i class="fa-solid fa-location-dot"></i></IconContainer>
+        <IconContainer>
+          <i class="fa-solid fa-location-dot"></i>
+        </IconContainer>
         {personal_data.address}
       </ContactWrapper>
       <ContactWrapper>
-      <IconContainer><i class="fa-brands fa-linkedin"></i></IconContainer>
+        <IconContainer>
+          <i class="fa-brands fa-linkedin"></i>
+        </IconContainer>
         <Link
           href="https://www.linkedin.com/in/simeon-simeonov-79553544/"
           target="_blank"
@@ -35,7 +41,9 @@ const ContactSection = () => {
         </Link>
       </ContactWrapper>
       <ContactWrapper>
-      <IconContainer><i class="fa-brands fa-github"></i></IconContainer>
+        <IconContainer>
+          <i class="fa-brands fa-github"></i>
+        </IconContainer>
         <Link
           href="https://github.com/ssimeonoff"
           target="_blank"
@@ -53,7 +61,6 @@ const ContactWrapper = styled.div`
   display: flex;
   margin-bottom: 10px;
 `;
-
 
 const Label = styled.div`
   margin-bottom: 10px;
@@ -89,7 +96,7 @@ const AvatarContainer = styled.div`
   @media (max-width: 800px) {
     display: none;
   }
-`
+`;
 const Avatar = styled.img`
   width: 150px;
   height: 150px;
@@ -97,4 +104,3 @@ const Avatar = styled.img`
   opacity: 0.9;
   border: 1px solid #ccc8;
 `;
-

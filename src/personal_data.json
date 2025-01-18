@@ -1,13 +1,24 @@
 {
   "jobs": [
     {
+      "key": 4,
+      "title": "Frontend developer",
+      "company": "Planday",
+      "date": "March 2024 - Present",
+      "list": [
+        "Implement Frontend applications for a SaaS platform in React/TS",
+        "Build, maintain and extend internal Frontend packages"
+      ],
+      "achievements": ["Learned how to work with an internal UI library."]
+    },
+    {
       "key": 1,
       "title": "Frontend developer",
       "company": "Joint Academy",
       "date": "Sep 2020 - Dec 2023",
       "list": [
         "Developing a React web application",
-        "Support with feature concepting and design", 
+        "Support with feature concepting and design",
         "2nd line tech-support help for the more complicated cases"
       ],
       "achievements": [
@@ -21,16 +32,15 @@
       "company": "Joint Academy",
       "date": "May 2017 - Sep 2020",
       "list": [
-        "QA of the Angular applications (Patient and Physio)", 
+        "QA of the Angular applications (Patient and Physio)",
         "QA of the React native application (Patient)",
         "QA of the React application (Physio)"
-        
       ],
       "achievements": [
         "As the first QA in the company - implemented quality assurance into the development process.",
         "Got to know all products end-to-end, including the backend parts and the database structure, and used that knowledge to actively assist the Support team in their daily work.",
         "Made my 'first steps' towards becoming a developer by picking and fixing bugs in a React Native application during the QA work downtime."
-        ]
+      ]
     },
     {
       "key": 3,
@@ -38,17 +48,18 @@
       "company": "Various companies",
       "date": "2006 - 2017",
       "list": [
-      "Quality Assurance of web applications", 
-      "Quality Assurance of native applications", 
-      "Quality Control for hardware products - lasers' power supplies, slot machines, door and window sensors", 
-      "Writing Quality Control manuals for various hardware products"
-    ],
+        "Quality Assurance of web applications",
+        "Quality Assurance of native applications",
+        "Quality Control for hardware products - lasers' power supplies, slot machines, door and window sensors",
+        "Writing Quality Control manuals for various hardware products"
+      ],
       "achievements": [
         "Changed career path from an engineer working in Physics to an engineer working in IT."
       ]
     }
   ],
-  "profile": "A QA-turned Frontend developer with good analytical and communication skills, and a keen eye for UX improvements. A team-player with an ability to work under strict deadlines. Eager to learn about new technologies.",  "name": "Simeon Simeonov",
+  "profile": "A QA-turned Frontend developer with good analytical and communication skills, and a keen eye for UX improvements. A team-player with an ability to work under strict deadlines. Eager to learn about new technologies.",
+  "name": "Simeon Simeonov",
   "profession": "Frontend Developer",
   "phone": "+46 793 379 890",
   "email": "s.simeonoff@gmail.com",
@@ -65,7 +76,7 @@
   },
   "interests": {
     "extra": "A small pride is that I built my desktop pc, picking carefully every part to a build not only a powerful machine, but also an aesthetically pleasing one.",
-    "list": [  "Computer games", "Board games", "Technology", "Gym"]
+    "list": ["Computer games", "Board games", "Technology", "Gym"]
   },
   "languages": {
     "extra": "A long paragraph of extra blah blah, but a funny one!",

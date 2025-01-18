@@ -28,13 +28,13 @@ const PanelRight = () => {
       </WrapperExpanded>
       <ColumnsWrapper>
         <Column>
-          <ExpertiseSection /> 
+          <ExpertiseSection />
           <LanguageSection />
           <InterestSection />
         </Column>
         <Column>
           <ContactSection />
-          <EducationSection /> 
+          <EducationSection />
         </Column>
       </ColumnsWrapper>
     </Container>
@@ -42,7 +42,7 @@ const PanelRight = () => {
 };
 export default PanelRight;
 
-const Container= styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
@@ -70,8 +70,8 @@ const NameLabel = styled.div`
 `;
 const ProfessionLabel = styled.div``;
 const ProfileWrapper = styled.div`
-  text-align: left;
   text-align: justify;
+  font-size: 16px;
 `;
 const Label = styled.div`
   margin-bottom: 10px;
@@ -90,6 +90,4 @@ const ColumnsWrapper = styled.div`
   }
 `;
 
-const Column = styled.div`
-`;
-
+const Column = styled.div``;
